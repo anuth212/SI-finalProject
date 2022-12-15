@@ -97,7 +97,7 @@ img {
   }
 
   #malay-des{
-    padding-left: 40px;
+    padding-left: 10px;
     font-size: 20px;
     font-weight: 0;
     padding-bottom: 40px;
@@ -183,7 +183,7 @@ img {
   }
 
   #one{
-    font-weight: bold;
+   
     padding-top: 20px;
     font-size: 4vw;
     padding-bottom: 20px;
@@ -191,14 +191,14 @@ img {
   }
 
   #two{
-    font-weight: bold;
-    font-size: 2.5vw;
+    
+    font-size: 3vw;
     padding-bottom: 20px;
   }
 
   #three{
-    font-weight: bold;
-    font-size: 2vw;
+    
+    font-size: 2.9vw;
     padding-bottom: 10px;
   }
   #me{
@@ -230,13 +230,9 @@ img {
     width: 20%;
   }
  
-
-
-
-
-
-  /* page 2*/
-  #photos{
+  /*page 2*/
+   /* page 2*/
+   #photos{
     margin-top: 2px;
     padding-top: 20px;
     background-color:rgb(0, 0, 0);
@@ -244,7 +240,7 @@ img {
   }
 
   .photo-header{
-    font-size: 60px;
+    font-size: 30px;
     text-align: center;
     background-color:rgb(221, 67, 67);
     width:fit-content;
@@ -319,8 +315,8 @@ img {
 
   #about-photos{
     text-align: center;
-    font-size: 30px;
-    max-width: 60%;
+    font-size: 20px;
+    max-width: 80%;
     margin-right: auto;
     margin-left: auto;
     color: white;
@@ -330,10 +326,16 @@ img {
 
 
 
+
+ 
+
+
+
+
   /*page 3*/
 
   .header{
-    font-size: 60px;
+    font-size: 30px;
     text-align: center;
     color: white;
     background-color:rgb(0, 0, 0);
@@ -341,7 +343,7 @@ img {
     margin-right:auto;
     margin-left: auto;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border: 2px rgb(255, 255, 255) solid;
    
   }
@@ -353,17 +355,7 @@ img {
   }
 
   #photo-info{
-    background-color: white;
-    color: black;
-    border: black 5px solid;
-    font-size: 30px;
-    max-width: 40%;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 40px;
+    display: none;
 
   }
 
@@ -373,33 +365,28 @@ img {
 
   .grid-wrap{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     justify-content: center;
     justify-self: center;
     align-items: stretch;
-    row-gap: 5px;
     column-gap: 5px;
     margin-left: auto;
     margin-right: auto;
-    border: 10px white solid;
-    background-color: white;
+  
     width: fit-content;
   }
 
-  .grid-wrap img{
-    width: 400px;
-    height: 420px;
+  .grid-wrap  img{
+    width: 80%;
+    height: 60%;
     object-fit: fill;
+    margin-left: 10%;
   }
 
-  .black-border{
-    border: black 15px solid;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
 
+  
 
   
 
@@ -664,5 +651,170 @@ img {
       border:rgb(221, 67, 67) solid 3px;
       width: 20%;
     }
+
+    /*page 2*/
+     /* page 2*/
+  #photos{
+    margin-top: 2px;
+    padding-top: 20px;
+    background-color:rgb(0, 0, 0);
+    padding-bottom: 20px;
+  }
+
+  .photo-header{
+    font-size: 60px;
+    text-align: center;
+    background-color:rgb(221, 67, 67);
+    width:fit-content;
+    margin-right:auto;
+    margin-left: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px white solid;
+  }
+
+  .images{
+    display: block;
+    margin: auto;
+   
+    
+  }
+
+  .card{
+    width:400px;
+    height: fit-content;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .card-title{
+    font-size: 30px;
+  }
+
+  .lb-data .lb-caption {
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+   
+  }
+   .lb-data .lb-details {
+    width: 100%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em;
+    text-align: center;
+
+    height: fit-content;
+
+    padding-top: 2px;
+  }
+
+  #family{
+    width: 400px;
+  }
+
+  .flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    
+  }
+  
+  .flex-wrap img{
+    width: auto;
+    align-items: center;
+
+    height: fit-content;
+    margin: 5px;
+    border: white 2px solid
+  }
+
+  #about-photos{
+    text-align: center;
+    font-size: 30px;
+    max-width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    padding-bottom: 20px;
+  }
+
+  /*page 3*/
+  .header{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    background-color:rgb(0, 0, 0);
+    width:fit-content;
+    margin-right:auto;
+    margin-left: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px rgb(255, 255, 255) solid;
+   
+  }
+
+  #text3{
+    background-color:rgb(221, 67, 67);
+    padding-top: 20px ;
+    padding-bottom: 100px;
+  }
+
+  #photo-info{
+    background-color: white;
+    color: black;
+    border: black 5px solid;
+    font-size: 30px;
+    max-width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px;
+    display: block;
+
+  }
+
+  
+
+
+
+  .grid-wrap{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    justify-self: center;
+    align-items: stretch;
+    row-gap: 5px;
+    column-gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px white solid;
+    background-color: white;
+    width: fit-content;
+  }
+
+  .grid-wrap img{
+    width: 400px;
+    height: 420px;
+    object-fit: fill;
+    margin-left:0;
+  }
+
+  .black-border{
+    border: black 15px solid;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
 }

@@ -91,7 +91,8 @@ img {
 
   /*red part*/
   #malay{
-    font-size: 100px;
+    font-size: 80px;
+    width: 100vw;
     padding-top: 60px;
     max-height:340px;
   }
@@ -111,7 +112,7 @@ img {
 
   #fullName{
     justify-self: flex-start;
-    font-size: 60px;
+    font-size: 40px;
   }
 
   #about{
@@ -126,12 +127,12 @@ img {
 
   #tag{
     
-    font-size: 30px;
+    font-size: 25px;
     
   }
 
   #tag2{
-    font-size: 30px;
+    font-size: 25px;
   }
 
   #text1{
@@ -202,6 +203,7 @@ img {
     padding-bottom: 10px;
   }
   #me{
+    margin-left: 20px;
     width: 30vw;
     height: 20vw;
     align-self: flex-end;
@@ -314,13 +316,7 @@ img {
   }
 
   #about-photos{
-    text-align: center;
-    font-size: 20px;
-    max-width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    color: white;
-    padding-bottom: 20px;
+    display: none;
   }
 
 
@@ -426,11 +422,19 @@ img {
     }
   
     /* The navigation links inside the overlay */
+    .overlay .active{
+      text-decoration: underline;
+    }
+
+    .overlay a:visited{
+      text-decoration: none;
+    }
+
     .overlay a {
       padding: 8px;
       text-decoration: none;
       font-size: 36px;
-      color: #818181;
+      color: #d5d4d4;
       display: block; /* Display block instead of inline */
       transition: 0.3s; /* Transition effects on hover (color) */
     }
@@ -463,8 +467,134 @@ img {
       display: none;
     }
 
+  
+
   /*media queries*/
-  @media screen and (min-width :990px){
+  @media screen and (min-width :768px){
+   
+
+    /*page 1*/
+    #malay{
+      font-size: 180px;
+      padding-top: 60px;
+      max-height:340px;
+    }
+  
+    #malay-des{
+      padding-left: 10px;
+      font-size: 30px;
+      font-weight: 0;
+      padding-bottom: 40px;
+    }
+  
+    #fullName{
+      font-size: 80px;
+    }
+  
+    #text1{
+     
+      text-align: left;
+    }
+  
+    
+  
+    #tag{
+      
+      font-size: 40px;
+      
+    }
+  
+    #tag2{
+      font-size: 40px;
+    }
+  
+    #text1{
+      display: flex;
+      
+      margin-bottom: auto;
+      padding-bottom: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+     
+      background-color: rgb(221, 67, 67);
+      padding-left: 4%;
+     
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px black solid;
+      padding-bottom: 30px;
+    }
+
+    /*page 2*/
+    #about-photos{
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      max-width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+      color: white;
+      padding-bottom: 20px;
+    }
+
+    .card{
+      width:300px;
+      height: fit-content;
+      text-align: center;
+      margin: 20px;
+    }
+  
+    .card-title{
+      font-size: 20px;
+    }
+    
+
+    /*page 3*/
+    #photo-info{
+      background-color: white;
+      color: black;
+      border: black 5px solid;
+      font-size: 30px;
+      max-width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 20px;
+      display: block;
+  
+    }
+    .grid-wrap{
+      grid-template-columns: auto auto ;
+    
+      row-gap: 2px;
+      
+      border: 8px white solid;
+      background-color: white;
+    }
+  
+    .grid-wrap img{
+      width: 300px;
+      height: 320px;
+      object-fit: fill;
+      margin-left:0;
+    }
+  
+    .black-border{
+      border: black 5px solid;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+
+  }
+
+
+  @media screen and (min-width :1440px){
+    /*nav*/
     /*nav*/
     .opener{
       display: none;
@@ -493,6 +623,7 @@ img {
         font-size: 20px;
         border-bottom: black 10px solid;
         vertical-align: middle;
+        padding-bottom: 10px;
     }
     
     #bigNav a{
@@ -514,25 +645,20 @@ img {
     #fullName{
       display: none;
     }
+  
+   
 
     #malay{
       font-size: 250px;
-      padding-top: 60px;
-      max-height:340px;
     }
   
     #malay-des{
       padding-left: 40px;
       font-size: 25px;
-      font-weight: 0;
-      padding-bottom: 40px;
+
     }
   
   
-    #text1{
-     
-      text-align: left;
-    }
   
     #about{
       display: flex;
@@ -560,59 +686,23 @@ img {
     }
   
     #text1{
-      display: flex;
-      
-      margin-bottom: auto;
-      padding-bottom: 0;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-     
-      background-color: rgb(221, 67, 67);
       padding-left: 8%;
-     
-      margin-left: auto;
-      margin-right: auto;
-      border: 2px black solid;
-      padding-bottom: 30px;
     }
     
     /*white part*/
   
     #text2{
-      height: 100%;
-      border: black 2px;
-      background-color: rgb(3, 3, 3);
       padding-top: 60px;
       padding-bottom: 60px;
     }
   
   
     #bio{
-      display: grid;
-      grid-template-columns: 70% 30%;
-      background-color: rgb(221, 67, 67);
- 
-      margin-right: auto;
-      margin-left: auto;
-      padding-top: 200px;
-      margin-bottom: 40px;
-      margin-top: 40px;
-      
-      width: 80%;
-      padding: 40px;
       padding-top: 60px;
       padding-bottom: 60px;
-      border: 20px white solid;
-      
     }
   
-    #one{
-      padding-top: 20px;
-      font-size: 4vw;
-      padding-bottom: 20px;
-      
-    }
+    
   
     #two{
       font-size: 2.5vw;
@@ -623,61 +713,17 @@ img {
       font-size: 2vw;
       padding-bottom: 40px;
     }
-    #me{
-      width: 30vw;
-      height: 20vw;
-      align-self: flex-end;
-      border-radius: 50%;
-    }
+  
     
     /*learn more*/
     
-    #learn-more{
-      text-align: center;
-      padding-top: 60px;
-      padding-bottom: 100px;
-      font-size: 40px;
-      font-weight: bold;
-    }
-  
-    div.buttons{
-      margin-top: 20px;
-      background-color: black;
-      font-size: 30px;
-      color: white;
-      display: inline-block;
-      padding: 20px;
-      border-radius: 20%;
-      border:rgb(221, 67, 67) solid 3px;
-      width: 20%;
-    }
-
-    /*page 2*/
+   
      /* page 2*/
-  #photos{
-    margin-top: 2px;
-    padding-top: 20px;
-    background-color:rgb(0, 0, 0);
-    padding-bottom: 20px;
-  }
+
 
   .photo-header{
     font-size: 60px;
-    text-align: center;
-    background-color:rgb(221, 67, 67);
-    width:fit-content;
-    margin-right:auto;
-    margin-left: auto;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 2px white solid;
-  }
 
-  .images{
-    display: block;
-    margin: auto;
-   
-    
   }
 
   .card{
@@ -691,80 +737,22 @@ img {
     font-size: 30px;
   }
 
-  .lb-data .lb-caption {
-    font-weight: lighter;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-   
-  }
-   .lb-data .lb-details {
-    width: 100%;
-    float: left;
-    text-align: left;
-    line-height: 1.1em;
-    text-align: center;
 
-    height: fit-content;
 
-    padding-top: 2px;
-  }
-
-  #family{
-    width: 400px;
-  }
-
-  .flex-wrap{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    
-  }
   
-  .flex-wrap img{
-    width: auto;
-    align-items: center;
-
-    height: fit-content;
-    margin: 5px;
-    border: white 2px solid
-  }
 
   #about-photos{
-    text-align: center;
     font-size: 30px;
     max-width: 60%;
-    margin-right: auto;
-    margin-left: auto;
-    color: white;
-    padding-bottom: 20px;
   }
 
   /*page 3*/
   .header{
     font-size: 60px;
-    text-align: center;
-    color: white;
-    background-color:rgb(0, 0, 0);
-    width:fit-content;
-    margin-right:auto;
-    margin-left: auto;
-    padding: 10px;
     margin-bottom: 10px;
-    border: 2px rgb(255, 255, 255) solid;
-   
   }
 
-  #text3{
-    background-color:rgb(221, 67, 67);
-    padding-top: 20px ;
-    padding-bottom: 100px;
-  }
+
 
   #photo-info{
     background-color: white;
@@ -787,19 +775,12 @@ img {
 
 
   .grid-wrap{
-    display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto;
-    justify-content: center;
-    justify-self: center;
-    align-items: stretch;
+  
     row-gap: 5px;
-    column-gap: 5px;
-    margin-left: auto;
-    margin-right: auto;
+    
     border: 10px white solid;
     background-color: white;
-    width: fit-content;
   }
 
   .grid-wrap img{

@@ -3,7 +3,18 @@ img {
     height: 300px;
 }
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
+ul{
+  margin-bottom: 0px;
+}
 
 /*nav*/
 
@@ -90,6 +101,10 @@ img {
   /* page 1*/
 
   /*red part*/
+
+  #infoOnMe{
+    width: fit-content;
+  }
   #malay{
     font-size: 80px;
     width: 100vw;
@@ -127,12 +142,12 @@ img {
 
   #tag{
     
-    font-size: 25px;
+    font-size: 23px;
     
   }
 
   #tag2{
-    font-size: 25px;
+    font-size: 23px;
   }
 
   #text1{
@@ -146,7 +161,7 @@ img {
    
     background-color: rgb(221, 67, 67);
     padding-left: 3%;
-   
+    
     margin-left: auto;
     margin-right: auto;
     border: 2px black solid;
@@ -154,8 +169,9 @@ img {
   }
   
   /*white part*/
-
+ 
   #text2{
+    
     height: 100%;
     border: black 2px;
     background-color: rgb(3, 3, 3);
@@ -193,43 +209,29 @@ img {
 
   #two{
     
-    font-size: 3vw;
+    font-size: 3.5vw;
     padding-bottom: 20px;
   }
 
   #three{
     
-    font-size: 2.9vw;
+    font-size: 3.3vw;
     padding-bottom: 10px;
   }
   #me{
     margin-left: 20px;
-    width: 30vw;
-    height: 20vw;
+    width: 34vw;
+    height: 18vw;
     align-self: flex-end;
     border-radius: 50%;
   }
   
   /*learn more*/
   
-  #learn-more{
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 100px;
-    font-size: 40px;
-    font-weight: bold;
-  }
+ 
 
-  div.buttons{
-    margin-top: 20px;
-    background-color: black;
-    font-size: 30px;
-    color: white;
-    display: inline-block;
-    padding: 20px;
-    border-radius: 20%;
-    border:rgb(221, 67, 67) solid 3px;
-    width: 20%;
+  #learn-more{
+    display: none;
   }
  
   /*page 2*/
@@ -251,6 +253,7 @@ img {
     padding: 10px;
     margin-bottom: 10px;
     border: 2px white solid;
+    color:black;
   }
 
   .images{
@@ -394,6 +397,7 @@ img {
   
 
     .opener{
+      color:black;
       padding-left:10px;
       font-size: 30px;
     }
@@ -434,14 +438,14 @@ img {
       padding: 8px;
       text-decoration: none;
       font-size: 36px;
-      color: #d5d4d4;
+      color: #ffffff;
       display: block; /* Display block instead of inline */
       transition: 0.3s; /* Transition effects on hover (color) */
     }
   
     /* When you mouse over the navigation links, change their color */
     .overlay a:hover, .overlay a:focus {
-      color: #f1f1f1;
+      color:  #f1f1f1;
     }
   
     /* Position the close button (top right corner) */
@@ -451,7 +455,14 @@ img {
       right: 45px;
       font-size: 60px;
     }
+
+    #bigNav{
+      display: none;
+    }
   
+    #bigNav li{
+      display: none;
+    }
     /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
     @media screen and (max-height: 450px) {
       .overlay a {font-size: 20px}
@@ -463,9 +474,121 @@ img {
     }
 
 
-    #bigNav{
-      display: none;
-    }
+  /* for music page */
+
+#mainSong{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color:black;
+  width: fit-content;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  background-color:rgb(221, 67, 67);
+
+  margin-bottom: 10px;
+  border: 2px white solid;
+  color:black;
+}
+h3 {
+  padding-bottom: 5px;
+  padding-top: 3px;
+}
+
+.genre {
+  border: solid 2px;
+  border-radius: 3px;
+  margin: 5px;
+  white-space: nowrap;
+  background-color: #ccc;
+  padding: 2px;
+}
+
+.btn {
+  margin: 10px;
+  width: 200px;
+  margin-bottom: 60px;
+}
+
+#songHead{
+  color:white;
+  font-size: 20px;
+  width: 100%;
+}
+.row{
+  margin-right: auto;
+  margin-left:auto;
+  text-align: center;
+}
+
+
+.artist {
+  display: inline-block;
+  height: 250px;
+  width: 80%;
+  margin-left: 25%;
+
+}
+
+.artist-albumcover {
+  max-width: 200px;
+  margin-right: 30px;
+  background-color: white;
+  width: fit-content;
+  height:fit-content;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 8px rgb(221, 67, 67) solid;
+}
+
+.artist-albumcover img {
+  width: 120%;
+  display: inline;
+  
+}
+
+.artist-info {
+  max-height: 250px;
+  background-color: white;
+  color: black;
+  border: 8px rgb(221, 67, 67) solid;
+  width: 35%;
+}
+
+.container img{
+  height:100px;
+  width:100px;
+}
+
+.container{
+  padding-top:20px;
+  border-top:white 2px solid;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin-right: 20%;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#makeBlack {
+  height: 100%;
+  background-color: black;
+  width: 100%;
+  }
+
+#whiteBack{
+  background-color: white;
+}
+
+.btn{
+  font-size: 19px;
+  padding: 10px;
+}
+
+
+
+    
 
   
 
@@ -524,6 +647,30 @@ img {
       margin-right: auto;
       border: 2px black solid;
       padding-bottom: 30px;
+    }
+
+    #learn-more{
+      width: 100%;
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 100px;
+      font-size: 20px;
+      font-weight: bold;
+      display: inline-block;
+      color:white;
+      background-color: black;
+    }
+  
+    div.buttons{
+      margin-top: 20px;
+      background-color: rgb(221, 67, 67);
+      font-size: 20px;
+      color: black;
+      display: inline-block;
+      padding: 20px;
+      
+      border:white solid 3px;
+      width: 35%;
     }
 
     /*page 2*/
@@ -588,6 +735,19 @@ img {
       margin-left: auto;
       margin-right: auto;
     }
+    /*page 4*/
+    .btn{
+      font-size: 23px;
+      width:250px;
+    }
+  
+    #songHead{
+      font-size: 25px;
+    }
+  
+    #mainSong{
+      font-size: 40px;
+    }
     
 
   }
@@ -617,14 +777,18 @@ img {
     
     #bigNav{
         display: inline-block;
-        
+        margin-bottom: 0px;
         width:100%;
         background-color: white;
         font-size: 20px;
         border-bottom: black 10px solid;
         vertical-align: middle;
-        padding-bottom: 10px;
+        
     }
+    .original{
+      padding-top: 10px;
+    }
+    
     
     #bigNav a{
         text-decoration: none;
@@ -716,7 +880,17 @@ img {
   
     
     /*learn more*/
-    
+    #learn-more{
+      font-size: 30px;
+      font-weight: normal;
+    }
+  
+    div.buttons{
+      margin-right: 20px;
+      font-size: 30px;
+
+      width: 35%;
+    }
    
      /* page 2*/
 
@@ -798,4 +972,49 @@ img {
   }
 
 
+  /*fourth page*/
+  .artist-info{
+    margin-left: 0;
+    width: 300px;
+    font-size: 16px;
+  }
+  .artist{
+   width: 40%;
+   margin-left: 10%;
+  }
+
+  .container img{
+    height:100px;
+    width:150px;
+  }
+  .container{
+    margin-bottom: 20px;
+  }
+
+  .btn{
+    font-size: 30px;
+    width:330px;
+  }
+
+  #songHead{
+    font-size: 25px;
+  }
+
+  #mainSong{
+    font-size: 60px;
+  }
+
+
 }
+
+@media (prefers-reduced-motion) {
+  .overlay{
+    transition: none;
+  }
+
+  .skip a{
+    transition: none;
+  }
+}
+
+

@@ -9,18 +9,18 @@
 	
 	<link rel="stylesheet" href="css/style.css">
     
-	<title>Title</title>
+	<title>About Me</title>
 </head>
 <body>
 	<header>
 		<div class="skip"><a href="#text2">Skip to Main Content</a></div>
-	  <nav id ="bigNav">
+	  <nav id ="bigNav" class ="original">
 		<ul>
             <li class="active"><a href = "main.html">About Me</a></li>
 			<li><a href = "main2.html">Friends and Family</a></li>
 			
 			<li><a href = "main3.html">My Photography</a></li>
-			
+			<li><a href = "index.html">Music</a></li>
 			
 		</ul>
 
@@ -43,6 +43,7 @@
 			<li><a href = "main2.html">Friends and Family</a></li>
 			
 			<li><a href = "main3.html">My Photography</a></li>
+			<li><a href = "index.html">Music</a></li>
 			
 			
 		</ul>
@@ -63,13 +64,13 @@
 
 </header>
 
-	<main>
-		<div id = "text1">
+	<main id = "infoOnMe">
+		<div id = "text1" tabindex="0">
 			<h1 id = "malay">ഹലോ</h1>
 			
-			<div id = "malay-des">"Hello, in Malayalam"</div>
+			<h2 id = "malay-des">"Hello, in Malayalam"</h2>
 			
-			<div id = "fullName">I'm Anu Thomas</div>
+			<h3 id = "fullName">I'm Anu Thomas</h3>
 			<div id = "about">I'm Anu</div>
 
 			<div id = "last">Thomas</div>
@@ -81,7 +82,7 @@
 		</div>
 		
 
-		<div id = "text2">
+		<div id = "text2" tabindex="0">
 			<div id = "bio">
 
 			
@@ -98,7 +99,7 @@
 
 		</div>
 
-		<!--
+		
 		<div id = "learn-more">
 			To learn more about me, click a button below
 			<div >
@@ -108,20 +109,23 @@
 			</div>
 			
 		</div>
-		-->
+		
 
 		
 	</main>
+	<footer>
+		<div id = "footerItems">
+	
+				<a href = "https://www.linkedin.com/in/anu-thomas18" target="_blank"><img id = "linked" class = "icon" src = "images/icons/linkedIn.png" alt = "Logo for linkedIn"></a></li>
+				<a href = "https://www.instagram.com/_anuthomas_/" target="_blank"><img id = "insta" class = "icon" src = "images/icons/insta.png" alt = "Logo for Instagram"></a></li>
+				
+				<p id = "copyright">
+					Copyright @ 2022 Anu Thomas
+				</p>
+		</div>
+	</footer>
 	<script src = "dist/js/overlay.js"></script>
 </body>
 
-<footer>
-	<div id = "footerItems">
 
-			<a href = "https://www.linkedin.com/in/anu-thomas18" target="_blank"><img id = "linked" class = "icon" src = "images/icons/linkedIn.png" alt = "Logo for linkedIn"></a></li>
-			<img  id = "insta" class = "icon" src = "images/icons/insta.png" alt = "Logo for Instagram"></li>
-			<p id = "copyright">
-				Copyright @ 2022 Anu Thomas
-			</p>
-	</div>
-</footer>
+</html>
